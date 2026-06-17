@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(void){
-  printf("Hola Mundo\n");
+  printf("Cr o no Cr, esa es la cuestión\n");
 
   return 0;
 }

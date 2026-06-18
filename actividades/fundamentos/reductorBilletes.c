@@ -7,9 +7,11 @@ int main(void){
   scanf("%d", &cantidad);
 
   cantidad20 = cantidad/20;
-  cantidad10 = (cantidad - cantidad20*20)/10;
-  cantidad5 = ((cantidad - cantidad20*20) - cantidad10*10)/5;
-  cantidad1 = ((cantidad - cantidad20*20) - cantidad10*10) - cantidad5*5;
+  cantidad %= 20;
+  cantidad10 = cantidad/10;
+  cantidad %= 10;
+  cantidad5 = cantidad/5;
+  cantidad1 = cantidad % 5;
 
   printf("Billetes $20: %d\n", cantidad20);
   printf("Billetes $10: %d\n", cantidad10);

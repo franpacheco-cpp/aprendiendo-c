@@ -8,6 +8,8 @@ int main(void){
   scanf("%f", &radio);
 
   volumen = (4.0f/3.0f) * PI * (radio*radio*radio);
-  printf("El volumen de la esfera es de %.1fm²\n", volumen);
+  printf("El volumen de la esfera es de %.1fm³\n", volumen);
+
+  return 0;
 }
 
